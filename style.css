@@ -6,6 +6,7 @@
     --title-color: #f07170;
     --bg-color: #fff;
     --button-color: #f26d44;
+    --button-hover-color: #d4d4d4;
 }
 
 body {
@@ -20,4 +21,21 @@ body {
     max-width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+a.btn,
+button.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    border-radius: 5px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a.btn:hover,
+button.btn:hover {
+    color: var(--accent-color2);
+    background-color: var(--button-hover-color);
 }
