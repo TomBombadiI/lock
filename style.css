@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --accent-color: #008afc;
+    --accent-color2: #e21c21;
+    --title-color: #f07170;
+    --bg-color: #fff;
+    --button-color: #f26d44;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: "Roboto Condensed", sans-serif;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
