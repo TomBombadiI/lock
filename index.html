@@ -27,10 +27,8 @@
 
                 <div class="header__phone-worktime">
                     <a href="tel:88000000000" class="header__phone">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                            width="24px" fill="#000000">
-                            <path
-                                d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                        <svg class="icon">
+                            <use href="./assets/icons/contacts.svg#phone"></use>
                         </svg>
                         8 800 000-00-00
                     </a>
@@ -203,6 +201,81 @@
         </div>
 
     </header>
+
+    <main class="main">
+        <h2>test</h2>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col company-info">
+                <a href="/" class="footer__logo">
+                    <img src="./assets/images/logo.svg" alt="Lock">
+                </a>
+                <div class="company-info__body">
+                    <p>Реквизиты</p>
+                    <p>Реквизиты</p>
+                </div>
+            </div>
+            <div class="footer__col footer-contacts">
+                <a href="tel:88005553535" class="footer-contacts__item">
+                    <svg class="icon">
+                        <use href="./assets/icons/contacts.svg#phone"></use>
+                    </svg>
+                    8 800 555 35 35
+                </a>
+                <a href="mailto:test@test.test" class="footer-contacts__item">
+                    <svg class="icon">
+                        <use href="./assets/icons/contacts.svg#mail"></use>
+                    </svg>
+                    test@test.tes
+                </a>
+                <div class="footer-contacts__socials">
+                    <a href="#">
+                        <svg class="icon">
+                            <use href="./assets/icons/socials.svg#inst"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use href="./assets/icons/socials.svg#tg"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use href="./assets/icons/socials.svg#wa"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <nav class="footer__col footer-menu">
+                <ul>
+                    <li class="current-menu-item"><a href="#">Главная</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Цены</a>
+                    </li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer__col">
+                <form class="order-form" action="#" method="post">
+                    <div class="order-form__title">
+                        Мы свяжемся с вами
+                    </div>
+                    <div class="order-form__body">
+                        <input type="text" required placeholder="Имя">
+                        <input type="tel" required placeholder="Телефон">
+                    </div>
+                    <button type="submit" class="btn">
+                        Записаться
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
 
     <script src="./assets/scripts/script.js"></script>
 </body>
