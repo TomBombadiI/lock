@@ -13,4 +13,18 @@ burgerTrigger.addEventListener('click', () => {
     body.classList.toggle('scroll-lock');
 });
 
+let lastScrollTop = null;
+
+window.addEventListener('scroll', () => {
+    let currentScrollTop = window.scrollY;
+
+    if (lastScrollTop < currentScrollTop) {
+        header.classList.add('hide');
+    } else {
+        header.classList.remove('hide');
+    }
+
+    lastScrollTop = currentScrollTop;
+});
+
 // #endregion HEADER
