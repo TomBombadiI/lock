@@ -59,3 +59,15 @@ const slider = new Swiper('.slider', {
 });
 
 // #endregion SLIDER
+
+// #region FSLIGHTBOX
+
+const fslightboxElements = document.querySelectorAll('[data-fslightbox]');
+
+fslightboxElements.forEach(element => {
+    element.addEventListener('click', () => {
+        document.documentElement.style.setProperty('--scrollbar-width', body.style.marginRight);
+    });
+});
+
+// #endregion FSLIGHTBOX
