@@ -75,6 +75,17 @@ main section:nth-child(even) {
     background-color: var(--bg-color2);
 }
 
+@media (max-width: 480px) {
+    main section {
+        padding: 35px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+}
+
 /* #endregion BASE */
 
 /* #region HEADER */
@@ -604,13 +615,13 @@ main section:nth-child(even) {
         height: 35px;
         line-height: 35px;
     }
-    
+
     .benefits__item-title {
         font-size: 22px;
         padding-left: 50px;
         margin-top: 0;
     }
-    
+
     .benefits__item-desc {
         margin-top: 10px;
         padding-left: 50px;
@@ -619,6 +630,52 @@ main section:nth-child(even) {
 
 
 /* #endregion BENEFITS */
+
+/* #region PRICES */
+
+.prices__table {
+    margin-bottom: 50px;
+}
+
+.prices__table:last-child {
+    margin-bottom: 0;
+}
+
+.price-table {
+    width: 100%;
+}
+
+.price-table th {
+    text-align: left;
+    padding: 10px 15px;
+    color: var(--title-color);
+    border-bottom: 3px solid var(--title-color);
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.price-table td {
+    border-bottom: 1px solid var(--title-color);
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.price-table td:last-child {
+    text-align: right;
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--accent-color2);
+    width: 100px;
+}
+
+@media (max-width: 480px) {
+    .prices__table {
+        margin-bottom: 25px;
+    }
+}
+
+/* #endregion PRICES */
 
 /* #region FOOTER */
 
