@@ -699,7 +699,7 @@ main section:nth-child(even) {
     .info__inner {
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .info__col:first-child {
         grid-row: 2;
     }
@@ -710,6 +710,39 @@ main section:nth-child(even) {
 }
 
 /* #endregion INFO */
+
+/* #region GALLERY */
+
+.gallery {}
+
+.container {}
+
+.gallery__inner {}
+
+.gallery__title {}
+
+.section-title {}
+
+.gallery__body {}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider-container {
+    padding: 0 3em;
+    position: relative;
+}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
+/* #endregion GALLERY */
 
 /* #region FOOTER */
 
@@ -833,7 +866,7 @@ main section:nth-child(even) {
         row-gap: 50px;
         justify-content: center;
     }
-    
+
     .footer__col:last-child {
         grid-row: 3;
     }

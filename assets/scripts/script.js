@@ -28,3 +28,34 @@ window.addEventListener('scroll', () => {
 });
 
 // #endregion HEADER
+
+// #region SLIDER
+
+const slider = new Swiper('.slider', {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+        },
+        600: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        1024: {
+            slidesPerView: 5,
+        },
+        1220: {
+            slidesPerView: 6,
+        }
+    }
+});
+
+// #endregion SLIDER
