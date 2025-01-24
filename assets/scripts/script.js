@@ -71,3 +71,27 @@ fslightboxElements.forEach(element => {
 });
 
 // #endregion FSLIGHTBOX
+
+// #region ACCORDION
+
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach(item => {
+    const header = item.querySelector('.accordion-header');
+    const contentWrapper = item.querySelector('.accordion-content-wrapper');
+
+    header.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+
+        if (isOpen) {
+            item.classList.remove('open');
+            contentWrapper.style.height = '0';
+        } else {
+            item.classList.add('open');
+            contentWrapper.style.height = contentWrapper.scrollHeight + 'px';
+        }
+
+    });
+});
+
+// #endregion ACCORDION
