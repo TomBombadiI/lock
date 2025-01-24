@@ -677,6 +677,40 @@ main section:nth-child(even) {
 
 /* #endregion PRICES */
 
+/* #region INFO */
+
+.info__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.info .order-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.info__text {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .info__inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .info__col:first-child {
+        grid-row: 2;
+    }
+
+    .info__text {
+        text-align: center;
+    }
+}
+
+/* #endregion INFO */
+
 /* #region FOOTER */
 
 .footer {
@@ -798,6 +832,10 @@ main section:nth-child(even) {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 50px;
         justify-content: center;
+    }
+    
+    .footer__col:last-child {
+        grid-row: 3;
     }
 }
 
