@@ -910,6 +910,55 @@ html.fslightbox-open .header {
 
 /* #endregion ABOUT */
 
+/* #region CONTACTS */
+
+.contacts__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.contacts-item {
+    text-align: center;
+}
+
+.contacts-item__label {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--accent-color2);
+}
+
+.contacts-item__label .icon {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    fill: var(--accent-color2);
+}
+
+.contacts-item__label .icon svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--dark-color);
+}
+
+.contacts-item.map .contacts-item__label .icon {
+    margin-bottom: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    .contacts__body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* #endregion CONTACTS */
+
 /* #region FOOTER */
 
 .footer {
