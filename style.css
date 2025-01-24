@@ -184,7 +184,7 @@ html.fslightbox-open .header {
     -webkit-box-shadow: 0px 7px 12px -4px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 7px 12px -4px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 7px 12px -4px rgba(34, 60, 80, 0.2);
-    z-index: 3;
+    z-index: 11;
 }
 
 .header__top {
