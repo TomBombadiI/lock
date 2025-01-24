@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+
+            <div class="header__top">
+                <a href="/" class="header__logo">
+                    <img width="100" height="100" src="./assets/images/logo.svg" alt="Lock">
+                </a>
+
+                <div class="header__phone-worktime">
+                    <a href="tel:88000000000" class="header__phone">
+                        <svg class="icon">
+                            <use href="./assets/icons/contacts.svg#phone"></use>
+                        </svg>
+                        8 800 000-00-00
+                    </a>
+                    <span>Круглосуточно</span>
+                </div>
+
+                <ul class="header__socials">
+                    <li>
+                        <a href="#" aria-label="Инстаграм">
+                            <svg class="icon">
+                                <use href="./assets/icons/socials.svg#inst"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Телеграм">
+                            <svg class="icon">
+                                <use href="./assets/icons/socials.svg#tg"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="WhatsApp">
+                            <svg class="icon">
+                                <use href="./assets/icons/socials.svg#wa"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="header__payments">
+
+                    <p>Способы оплаты:</p>
+
+                    <ul>
+                        <li title="Наличные">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                width="24px" fill="#000000">
+                                <path
+                                    d="M560-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM280-320q-33 0-56.5-23.5T200-400v-320q0-33 23.5-56.5T280-800h560q33 0 56.5 23.5T920-720v320q0 33-23.5 56.5T840-320H280Zm80-80h400q0-33 23.5-56.5T840-480v-160q-33 0-56.5-23.5T760-720H360q0 33-23.5 56.5T280-640v160q33 0 56.5 23.5T360-400Zm440 240H120q-33 0-56.5-23.5T40-240v-440h80v440h680v80ZM280-400v-320 320Z" />
+                            </svg>
+                            <span>Наличные</span>
+                        </li>
+                        <li title="Картой">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                width="24px" fill="#000000">
+                                <path
+                                    d="M880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720Zm-720 80h640v-80H160v80Zm0 160v240h640v-240H160Zm0 240v-480 480Z" />
+                            </svg>
+                            <span>Картой</span>
+                        </li>
+                        <li title="Переводом">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                width="24px" fill="#000000">
+                                <path
+                                    d="M336-374q9-24 14.5-50.5T356-480q0-29-5.5-55.5T336-586l-74 30q6 18 10 37t4 39q0 20-4 39t-10 37l74 30Zm128 54q17-38 24.5-78t7.5-82q0-42-7.5-82T464-640l-74 30q14 30 20 62.5t6 67.5q0 35-6 67.5T390-350l74 30Zm130 54q21-50 31.5-103.5T636-480q0-57-10.5-110.5T594-694l-74 32q18 42 27 88t9 94q0 48-9 94t-27 88l74 32ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                            </svg>
+                            <span>Переводом</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <button class="burger-trigger">
+                    <div class="top"></div>
+                    <div class="middle"></div>
+                    <div class="bottom"></div>
+                </button>
+            </div>
+
+            <nav class="header__menu menu">
+                <ul>
+                    <li class="current-menu-item"><a href="#">Главная</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="./prices.html">Цены</a>
+                        <ul class="sub-menu">
+                            <li><a href="./price.html">Вскрытие замков авто</a></li>
+                            <li><a href="./price.html">Вскрытие замков квартир</a></li>
+                            <li><a href="./price.html">Ремонт автозамков</a></li>
+                            <li><a href="./price.html">Ремонт замков дверей квартир</a></li>
+                            <li><a href="./price.html">Замена замков</a></li>
+                            <li><a href="./price.html">Замена автозамков</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./about.html">О нас</a></li>
+                    <li><a href="">Блог</a></li>
+                    <li><a href="./contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile-menu">
+                <ul>
+                    <li class="current-menu-item"><a href="#">Главная</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="./prices.html">Цены</a>
+                        <ul class="sub-menu">
+                            <li><a href="./price.html">Вскрытие замков авто</a></li>
+                            <li><a href="./price.html">Вскрытие замков квартир</a></li>
+                            <li><a href="./price.html">Ремонт автозамков</a></li>
+                            <li><a href="./price.html">Ремонт замков дверей квартир</a></li>
+                            <li><a href="./price.html">Замена замков</a></li>
+                            <li><a href="./price.html">Замена автозамков</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./about.html">О нас</a></li>
+                    <li><a href="">Блог</a></li>
+                    <li><a href="./contacts.html">Контакты</a></li>
+                </ul>
+
+                <ul class="header__socials header__socials_mobile">
+                    <li>
+                        <a href="#" aria-label="Инстаграм">
+                            <svg class="icon">
+                                <use href="./assets/icons/socials.svg#inst"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Телеграм">
+                            <svg class="icon">
+                                <use href="./assets/icons/socials.svg#tg"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="WhatsApp">
+                            <svg class="icon">
+                                <use href="./assets/icons/socials.svg#wa"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="header__payments">
+
+                    <p>Способы оплаты:</p>
+
+                    <ul>
+                        <li title="Наличные">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                width="24px" fill="#000000">
+                                <path
+                                    d="M560-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM280-320q-33 0-56.5-23.5T200-400v-320q0-33 23.5-56.5T280-800h560q33 0 56.5 23.5T920-720v320q0 33-23.5 56.5T840-320H280Zm80-80h400q0-33 23.5-56.5T840-480v-160q-33 0-56.5-23.5T760-720H360q0 33-23.5 56.5T280-640v160q33 0 56.5 23.5T360-400Zm440 240H120q-33 0-56.5-23.5T40-240v-440h80v440h680v80ZM280-400v-320 320Z" />
+                            </svg>
+                            <span>Наличные</span>
+                        </li>
+                        <li title="Картой">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                width="24px" fill="#000000">
+                                <path
+                                    d="M880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720Zm-720 80h640v-80H160v80Zm0 160v240h640v-240H160Zm0 240v-480 480Z" />
+                            </svg>
+                            <span>Картой</span>
+                        </li>
+                        <li title="Переводом">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                width="24px" fill="#000000">
+                                <path
+                                    d="M336-374q9-24 14.5-50.5T356-480q0-29-5.5-55.5T336-586l-74 30q6 18 10 37t4 39q0 20-4 39t-10 37l74 30Zm128 54q17-38 24.5-78t7.5-82q0-42-7.5-82T464-640l-74 30q14 30 20 62.5t6 67.5q0 35-6 67.5T390-350l74 30Zm130 54q21-50 31.5-103.5T636-480q0-57-10.5-110.5T594-694l-74 32q18 42 27 88t9 94q0 48-9 94t-27 88l74 32ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                            </svg>
+                            <span>Переводом</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="main page">
+
+        <section class="blog">
+            <div class="container">
+                <div class="blog__wrapper">
+                    <h1 class="blog__title section-title">Наш блог</h1>
+                    <div class="blog__posts posts">
+                        <div class="posts__post post">
+                            <div class="post__img">
+                                <a href="https://protectorminsk.by/4-sposoba-sdelat-avtomobilnye-diski-bezuprechnymi/">
+                                    <img src="./assets/images/banner-bg.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="post__label">
+                                <a href="#">
+                                    Какой-то заголовок
+                                </a>
+                            </div>
+                            <div class="post_desc">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa impedit totam nihil
+                                    voluptate, aut numquam dolor quas dolore eligendi fugit neque beatae possimus dicta
+                                    consequuntur repudiandae similique itaque hic maiores.
+                                </p>
+                            </div>
+                            <a href="#" class="post__read-more">
+                                <span>Читать далее</span>
+                            </a>
+                        </div>
+                        <div class="posts__post post">
+                            <div class="post__img">
+                                <a href="https://protectorminsk.by/4-sposoba-sdelat-avtomobilnye-diski-bezuprechnymi/">
+                                    <img src="./assets/images/banner-bg.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="post__label">
+                                <a href="#">
+                                    Какой-то заголовок
+                                </a>
+                            </div>
+                            <div class="post_desc">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa impedit totam nihil
+                                    voluptate, aut numquam dolor quas dolore eligendi fugit neque beatae possimus dicta
+                                    consequuntur repudiandae similique itaque hic maiores.
+                                </p>
+                            </div>
+                            <a href="#" class="post__read-more">
+                                <span>Читать далее</span>
+                            </a>
+                        </div>
+                        <div class="posts__post post">
+                            <div class="post__img">
+                                <a href="https://protectorminsk.by/4-sposoba-sdelat-avtomobilnye-diski-bezuprechnymi/">
+                                    <img src="./assets/images/banner-bg.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="post__label">
+                                <a href="#">
+                                    Какой-то заголовок
+                                </a>
+                            </div>
+                            <div class="post_desc">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa impedit totam nihil
+                                    voluptate, aut numquam dolor quas dolore eligendi fugit neque beatae possimus dicta
+                                    consequuntur repudiandae similique itaque hic maiores.
+                                </p>
+                            </div>
+                            <a href="#" class="post__read-more">
+                                <span>Читать далее</span>
+                            </a>
+                        </div>
+                        <div class="posts__post post">
+                            <div class="post__img">
+                                <a href="https://protectorminsk.by/4-sposoba-sdelat-avtomobilnye-diski-bezuprechnymi/">
+                                    <img src="./assets/images/banner-bg.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="post__label">
+                                <a href="#">
+                                    Какой-то заголовок
+                                </a>
+                            </div>
+                            <div class="post_desc">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa impedit totam nihil
+                                    voluptate, aut numquam dolor quas dolore eligendi fugit neque beatae possimus dicta
+                                    consequuntur repudiandae similique itaque hic maiores.
+                                </p>
+                            </div>
+                            <a href="#" class="post__read-more">
+                                <span>Читать далее</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col company-info">
+                <a href="/" class="footer__logo">
+                    <img src="./assets/images/logo.svg" alt="Lock">
+                </a>
+                <div class="company-info__body">
+                    <p>Реквизиты</p>
+                    <p>Реквизиты</p>
+                </div>
+            </div>
+            <div class="footer__col footer-contacts">
+                <h4 class="footer-col__title">Контакты</h4>
+                <a href="tel:88005553535" class="footer-contacts__item">
+                    <svg class="icon">
+                        <use href="./assets/icons/contacts.svg#phone"></use>
+                    </svg>
+                    8 800 555 35 35
+                </a>
+                <a href="mailto:test@test.test" class="footer-contacts__item">
+                    <svg class="icon">
+                        <use href="./assets/icons/contacts.svg#mail"></use>
+                    </svg>
+                    test@test.tes
+                </a>
+                <div class="footer-contacts__socials">
+                    <a href="#">
+                        <svg class="icon">
+                            <use href="./assets/icons/socials.svg#inst"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use href="./assets/icons/socials.svg#tg"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use href="./assets/icons/socials.svg#wa"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <nav class="footer__col footer-menu">
+                <h4 class="footer-col__title">Навигация</h4>
+                <ul>
+                    <li class="current-menu-item"><a href="#">Главная</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Цены</a>
+                    </li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer__col">
+                <form class="order-form" action="#" method="post">
+                    <div class="order-form__title">
+                        Мы свяжемся с вами
+                    </div>
+                    <div class="order-form__body">
+                        <input type="text" required placeholder="Имя">
+                        <input type="tel" required placeholder="Телефон">
+                    </div>
+                    <button type="submit" class="btn">
+                        Записаться
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.2/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>
