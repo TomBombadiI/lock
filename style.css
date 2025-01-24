@@ -818,6 +818,36 @@ html.fslightbox-open .header {
 
 /* #endregion FAQ */
 
+/* #region REVIEWS */
+
+.feedback__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.feedback__col {
+    max-width: 560px;
+    max-height: 800px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #e6e6e6;
+}
+
+@media (max-width: 768px) {
+    .feedback__body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feedback__col {
+        max-width: none;
+        max-height: 800px;
+        overflow: hidden;
+    }
+}
+
+/* #endregion REVIEWS */
+
 /* #region FOOTER */
 
 .footer {
